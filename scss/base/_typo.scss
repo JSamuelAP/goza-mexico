@@ -1,0 +1,23 @@
+:root {
+  font-size: $font-size;
+  font-weight: map-get($map: $font-weights, $key: body-regular);
+  line-height: 1;
+}
+body {
+  font-family: map-get($map: $font-families, $key: body);
+  color: map-get($map: $gray-scale, $key: gray-900);
+}
+%heading {
+  font-family: map-get($map: $font-families, $key: heading);
+  font-weight: map-get($map: $font-weights, $key: heading-regular);
+}
+@for $heading-num from 1 through 6 {
+  h#{$heading-num}, .h#{$heading-num} {
+    font-size: map-get($map: $typo-sacle, $key: h#{$heading-num});
+    @extend %heading;
+  }
+}
+.display {
+  font-size: map-get($map: $typo-sacle, $key: display);
+  @extend %heading;
+}

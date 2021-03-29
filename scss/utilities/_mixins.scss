@@ -1,0 +1,106 @@
+/*
+ * Mediaqueries
+ */
+@mixin from($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+/*
+ * Columnas y espaciados
+ */
+@mixin row-gap($gap-row) {
+  row-gap: $gap-row;
+}
+@mixin col-gap($gap-col) {
+  margin-left:  $gap-col / -2;
+  margin-right: $gap-col / -2;
+  > [class*="col"] {
+    padding-left:  $gap-col / 2;
+    padding-right: $gap-col / 2;
+  }
+}
+@mixin row-col-gap($n) {
+  @include row-gap($n);
+  @include col-gap($n);
+}
+@mixin generate-gaps($bks) {
+  .row {
+    // espaciado entre filas y/o columnas
+    &.gap {
+      @include row-col-gap($gap);
+      &-row {
+        @include row-gap($gap);
+      }
+      &-col {
+        @include col-gap($gap);
+      }
+    }
+    // distinos espaciados entre filas y/o columnas
+    @each $gap-size, $size in $gaps {
+      &.gap-#{$gap-size} {
+        @include row-col-gap($size);
+      }
+      &.gap-row-#{$gap-size} {
+        @include row-gap($size);
+      }
+      &.gap-col-#{$gap-size} {
+        @include col-gap($size);
+      }
+    }
+    @each $bk, $width in $bks {
+      @include from($width) {
+        // espaciado entre filas y columnas en cada breakpoint
+        &.#{$bk}-gap {
+          @include row-col-gap($gap);
+          &-row {
+            @include row-gap($gap);
+          }
+          &-col {
+            @include col-gap($gap);
+          }
+        }
+        // distinos espaciacos entre filas y columnas en cada breakpoint
+        @each $gap-size, $size in $gaps {
+          &.#{$bk}-gap-#{$gap-size} {
+            @include row-col-gap($size);
+          }
+          &.#{$bk}-gap-row-#{$gap-size} {
+            @include row-gap($size);
+          }
+          &.#{$bk}-gap-col-#{$gap-size} {
+            @include col-gap($size);
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin generate-cols($bks) {
+  .col {
+    flex: auto;
+
+    // generar columnas para cada numero de columnas
+    @for $col from 1 through $numCols {
+      &-#{$col} {
+        flex: 0 1 (100% / $numCols) * $col;
+      }
+    }
+  }
+  @each $bk, $width in $bks {
+    @include from($width) {
+      // generar columna para cada breakpoint
+      .#{$bk}-col {
+        flex: auto;
+      }
+      // generar columnas para cada numero de columnas en cada breakpoint
+      @for $col from 1 through $numCols {
+        .#{$bk}-col-#{$col} {
+          flex: 0 1 (100% / $numCols) * $col;
+        }
+      }
+    }
+  }
+}

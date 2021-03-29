@@ -1,0 +1,87 @@
+/*
+ * Colores
+ */
+$main-palete: (
+  rojo:     #EE2743,
+  rosa:     #EC2286,
+  amarillo: #EEB627,
+  morado:   #AC2484,
+  verde:    #85C441,
+  turquesa: #00ABBE
+);
+$light-palete: (
+  rojo:     #ffccd6,
+  rosa:     #f6b8d6,
+  amarillo: #fbf5c1,
+  morado:   #e9bdd8,
+  verde:    #dbedc6,
+  turquesa: #b2ebf1
+);
+$gray-scale: (
+  gray-50:  #FAFAFA,
+  gray-100: #F5F5F5,
+  gray-200: #EEEEEE,
+  gray-300: #E0E0E0,
+  gray-400: #BDBDBD,
+  gray-500: #9E9E9E,
+  gray-600: #757575,
+  gray-700: #616161,
+  gray-800: #424242,
+  gray-900: #212121,
+);
+
+/*
+ * Tipografía
+ */
+$font-size: 16px;
+$font-families: (
+  heading: 'Merriweather', serif,
+  body:    'Poppins', sans-serif
+);
+$font-weights: (
+  heading-regular: 400,
+  heading-black:   900,
+  body-extra-light: 200,
+  body-regular:     400,
+  body-bold:        700
+);
+$typo-sacle: (
+  display: 8rem,
+  h1: 6rem,
+  h2: 5rem,
+  h3: 4rem,
+  h4: 3rem,
+  h5: 2rem,
+  h6: 1rem,
+  base: $font-size,
+  small: $font-size * .8
+);
+
+/*
+ * Layout
+ */
+$breakpoints: (
+  xs: 0,
+  s:  480px,
+  m:  768px,
+  l:  1024px,
+  xl: 1200px
+);
+$numCols: 12;
+$gap: 1rem;
+$gaps: (
+  0: 0,
+  1: .5rem,
+  2: 2rem,
+  3: 3rem,
+  4: 4rem
+);
+
+/*
+ * Efectos
+ */
+$shadows: (
+  card: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px,
+  surface: rgba(17, 17, 26, 0.1) 0px 0px 16px
+);
