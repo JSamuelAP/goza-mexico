@@ -426,23 +426,23 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .display {
 }
 
 h1, .h1 {
-  font-size: 6rem;
+  font-size: 3.052rem;
 }
 
 h2, .h2 {
-  font-size: 5rem;
+  font-size: 2.44rem;
 }
 
 h3, .h3 {
-  font-size: 4rem;
+  font-size: 1.953rem;
 }
 
 h4, .h4 {
-  font-size: 3rem;
+  font-size: 1.563rem;
 }
 
 h5, .h5 {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 h6, .h6 {
@@ -451,12 +451,14 @@ h6, .h6 {
 
 .display {
   font-size: 8rem;
+  text-transform: uppercase;
 }
 
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .container-fluid {
@@ -1657,6 +1659,75 @@ h6, .h6 {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
   }
+}
+
+header {
+  min-height: 100vh;
+}
+
+.hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(75%, rgba(0, 0, 0, 0.9)), color-stop(85%, rgba(0, 0, 0, 0.6)), to(#FAFAFA)), url(../../images/backgrounds/main-bg-m.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.6) 85%, #FAFAFA), url(../../images/backgrounds/main-bg-m.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero__title {
+  font-size: 2.44rem;
+  text-align: center;
+  color: #fff;
+}
+
+.btn, .btn--ghost {
+  padding: .25rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #EE2743;
+  color: #fff;
+  border: none;
+}
+
+.btn--ghost {
+  background-color: transparent;
+  color: #EE2743;
+  border: 2px solid #EE2743;
+}
+
+.btn--big {
+  padding: .5rem 1.5rem;
+}
+
+.btn--full {
+  width: 100%;
+}
+
+.search-form__input {
+  width: 100%;
+  padding: .5rem 1rem;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+}
+
+body {
+  background-color: #FAFAFA;
 }
 
 .lb-loader, .lightbox {

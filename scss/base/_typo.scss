@@ -19,5 +19,6 @@ body {
 }
 .display {
   font-size: map-get($map: $typo-sacle, $key: display);
+  text-transform: uppercase;
   @extend %heading;
 }
