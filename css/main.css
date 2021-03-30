@@ -1661,11 +1661,12 @@ h6, .h6 {
   }
 }
 
-header {
-  min-height: 100vh;
+.header {
+  height: 100vh;
 }
 
-.hero {
+.header__hero {
+  height: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(75%, rgba(0, 0, 0, 0.9)), color-stop(85%, rgba(0, 0, 0, 0.6)), to(#FAFAFA)), url(../../images/backgrounds/main-bg-m.jpg);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.6) 85%, #FAFAFA), url(../../images/backgrounds/main-bg-m.jpg);
   background-repeat: no-repeat;
@@ -1683,7 +1684,7 @@ header {
           justify-content: center;
 }
 
-.hero__title {
+.header .hero__title {
   font-size: 2.44rem;
   text-align: center;
   color: #fff;
