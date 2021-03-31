@@ -13,12 +13,12 @@ body {
 }
 @for $heading-num from 1 through 6 {
   h#{$heading-num}, .h#{$heading-num} {
-    font-size: map-get($map: $typo-sacle, $key: h#{$heading-num});
+    font-size: map-get($map: $typo-scale, $key: h#{$heading-num});
     @extend %heading;
   }
 }
 .display {
-  font-size: map-get($map: $typo-sacle, $key: display);
+  font-size: map-get($map: $typo-scale, $key: display);
   text-transform: uppercase;
   @extend %heading;
 }
