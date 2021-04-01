@@ -1690,6 +1690,23 @@ h6, .h6 {
   color: #fff;
 }
 
+.footer {
+  margin: 2rem 0 4.5rem;
+  padding: 1rem 0;
+  background-color: #EEEEEE;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.footer__text {
+  text-align: center;
+}
+
+.footer__author {
+  font-weight: 700;
+  color: #EE2743;
+}
+
 .main {
   margin-top: 2rem;
 }
