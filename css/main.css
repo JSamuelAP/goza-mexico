@@ -1736,6 +1736,54 @@ h6, .h6 {
   background-color: #dbedc6;
 }
 
+.navbar__modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  font-size: 12.8px;
+  color: #fff;
+  z-index: 1000;
+}
+
+.navbar__modal.visible {
+  display: block;
+  -webkit-animation: show-modal .5s alternate;
+          animation: show-modal .5s alternate;
+}
+
+@-webkit-keyframes show-modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal__list {
+  list-style: none;
+}
+
+.modal__link {
+  display: block;
+  padding: .1rem 0;
+}
+
 .header {
   height: 100vh;
 }

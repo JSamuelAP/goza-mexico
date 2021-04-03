@@ -34,4 +34,39 @@
   &__item:nth-child(4) {
     @include item-color(verde);
   }
+  &__modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    padding: 1rem 0;
+    background-color: rgba($color: #000, $alpha: .9);
+    text-align: center;
+    font-size: map-get($map: $typo-scale, $key: small);
+    color: #fff;
+    z-index: 1000;
+  }
+  &__modal.visible {
+    display: block;
+    animation: show-modal .5s alternate;
+  }
+}
+@keyframes show-modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal {
+  &__list {
+    list-style: none;
+  }
+  &__link {
+    display: block;
+    padding: .1rem 0;
+  }
 }
