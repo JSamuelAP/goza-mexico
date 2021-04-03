@@ -1,4 +1,13 @@
 /*
+ * Color items
+ */
+@mixin item-color($color) {
+  color: map-get($map: $main-palete, $key: $color);
+  &:hover {
+    background-color: map-get($map: $light-palete, $key: $color);
+  }
+}
+/*
  * Mediaqueries
  */
 @mixin from($width) {

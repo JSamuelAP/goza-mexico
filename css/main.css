@@ -12,6 +12,9 @@
  * Efectos
  */
 /*
+ * Color items
+ */
+/*
  * Mediaqueries
  */
 /*
@@ -1661,6 +1664,78 @@ h6, .h6 {
   }
 }
 
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12.8px;
+  background-color: #EEEEEE;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  z-index: 100;
+}
+
+.navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navbar__item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.navbar__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 0;
+}
+
+.navbar__link i {
+  margin-bottom: .25rem;
+}
+
+.navbar__item:nth-child(1) {
+  color: #EE2743;
+}
+
+.navbar__item:nth-child(1):hover {
+  background-color: #ffccd6;
+}
+
+.navbar__item:nth-child(2) {
+  color: #EEB627;
+}
+
+.navbar__item:nth-child(2):hover {
+  background-color: #fbf5c1;
+}
+
+.navbar__item:nth-child(3) {
+  color: #00ABBE;
+}
+
+.navbar__item:nth-child(3):hover {
+  background-color: #b2ebf1;
+}
+
+.navbar__item:nth-child(4) {
+  color: #85C441;
+}
+
+.navbar__item:nth-child(4):hover {
+  background-color: #dbedc6;
+}
+
 .header {
   height: 100vh;
 }
@@ -1691,7 +1766,7 @@ h6, .h6 {
 }
 
 .footer {
-  margin: 2rem 0 4.5rem;
+  margin: 2rem 0 60px;
   padding: 1rem 0;
   background-color: #EEEEEE;
   -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
