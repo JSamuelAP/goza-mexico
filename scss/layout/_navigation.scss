@@ -14,7 +14,7 @@
   &__item {
     flex-grow: 1;
   }
-  &__link {
+  [class*="navbar__link"] {
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
@@ -22,17 +22,10 @@
       margin-bottom: .25rem;
     }
   }
-  &__item:nth-child(1) {
-    @include item-color(rojo);
-  }
-  &__item:nth-child(2) {
-    @include item-color(amarillo);
-  }
-  &__item:nth-child(3) {
-    @include item-color(turquesa);
-  }
-  &__item:nth-child(4) {
-    @include item-color(verde);
+  @each $item, $color in $nav-items {
+    &__link--#{$item} {
+      @include item-color($color);
+    }
   }
   &__modal {
     display: none;

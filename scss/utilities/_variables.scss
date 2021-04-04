@@ -85,3 +85,13 @@ $shadows: (
   card-2: rgba(0, 0, 0, 0.04) 0px 10px 10px -5px,
   surface: rgba(17, 17, 26, 0.1) 0px 0px 16px
 );
+
+/*
+ * Navbar items
+ */
+$nav-items: (
+  home:    rojo,
+  contact: amarillo,
+  about:   turquesa,
+  search:  verde
+)

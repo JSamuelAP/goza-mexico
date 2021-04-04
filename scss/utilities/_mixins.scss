@@ -3,7 +3,7 @@
  */
 @mixin item-color($color) {
   color: map-get($map: $main-palete, $key: $color);
-  &:hover {
+  &:hover, &.active {
     background-color: map-get($map: $light-palete, $key: $color);
   }
 }

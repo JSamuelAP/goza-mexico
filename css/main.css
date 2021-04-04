@@ -12,6 +12,9 @@
  * Efectos
  */
 /*
+ * Navbar items
+ */
+/*
  * Color items
  */
 /*
@@ -1689,7 +1692,7 @@ h6, .h6 {
           flex-grow: 1;
 }
 
-.navbar__link {
+.navbar [class*="navbar__link"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1700,39 +1703,39 @@ h6, .h6 {
   padding: 1rem 0;
 }
 
-.navbar__link i {
+.navbar [class*="navbar__link"] i {
   margin-bottom: .25rem;
 }
 
-.navbar__item:nth-child(1) {
+.navbar__link--home {
   color: #EE2743;
 }
 
-.navbar__item:nth-child(1):hover {
+.navbar__link--home:hover, .navbar__link--home.active {
   background-color: #ffccd6;
 }
 
-.navbar__item:nth-child(2) {
+.navbar__link--contact {
   color: #EEB627;
 }
 
-.navbar__item:nth-child(2):hover {
+.navbar__link--contact:hover, .navbar__link--contact.active {
   background-color: #fbf5c1;
 }
 
-.navbar__item:nth-child(3) {
+.navbar__link--about {
   color: #00ABBE;
 }
 
-.navbar__item:nth-child(3):hover {
+.navbar__link--about:hover, .navbar__link--about.active {
   background-color: #b2ebf1;
 }
 
-.navbar__item:nth-child(4) {
+.navbar__link--search {
   color: #85C441;
 }
 
-.navbar__item:nth-child(4):hover {
+.navbar__link--search:hover, .navbar__link--search.active {
   background-color: #dbedc6;
 }
 
