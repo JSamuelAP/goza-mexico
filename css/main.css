@@ -1701,6 +1701,8 @@ h6, .h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1rem 0;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
 }
 
 .navbar [class*="navbar__link"] i {
