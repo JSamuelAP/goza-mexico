@@ -431,6 +431,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .display {
   font-weight: 400;
 }
 
+@media screen and (min-width: 768px) {
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .display {
+    line-height: .5;
+  }
+}
+
 h1, .h1 {
   font-size: 3.052rem;
 }
@@ -1812,10 +1818,30 @@ h6, .h6 {
           justify-content: center;
 }
 
+@media screen and (min-width: 468px) {
+  .header__hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(0, 0, 0, 0.9)), color-stop(80%, rgba(0, 0, 0, 0.6)), to(#FAFAFA)), url(../../images/backgrounds/main-bg.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.6) 80%, #FAFAFA), url(../../images/backgrounds/main-bg.jpg);
+  }
+}
+
 .header .hero__title {
   font-size: 2.44rem;
   text-align: center;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .header .hero__title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .search-form {
+    margin: 0 auto;
+    max-width: 500px;
+  }
 }
 
 .footer {

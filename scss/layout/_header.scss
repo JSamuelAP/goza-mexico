@@ -13,10 +13,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include from(468px) {
+      background-image: linear-gradient(to bottom,
+                                                  rgba(#000, .9) 70%,
+                                                  rgba(#000, .6) 80%,
+                                                  map-get($map: $gray-scale, $key: gray-50)),
+                        url(../../images/backgrounds/main-bg.jpg);
+    }
   }
   .hero__title {
     font-size: map-get($map: $typo-scale, $key: h2);
     text-align: center;
     color: #fff;
+    @include from(768px) {
+      font-size: map-get($map: $typo-scale, $key: display) / 2;
+    }
+  }
+  .search-form {
+    @include from(768px) {
+      margin: 0 auto;
+      max-width: 500px;
+    }
   }
 }

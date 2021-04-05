@@ -10,6 +10,9 @@ body {
 %heading {
   font-family: map-get($map: $font-families, $key: heading);
   font-weight: map-get($map: $font-weights, $key: heading-regular);
+  @include from(768px) {
+    line-height: .5;
+  }
 }
 @for $heading-num from 1 through 6 {
   h#{$heading-num}, .h#{$heading-num} {
