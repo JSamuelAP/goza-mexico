@@ -1914,10 +1914,22 @@ h6, .h6 {
   font-size: 12.8px;
 }
 
+.card__content a.btn {
+  font-size: 12.8px;
+}
+
+@media screen and (min-width: 768px) {
+  .card__content {
+    padding: .5rem 1rem;
+    font-size: 16px;
+  }
+}
+
 .card__title {
   margin-bottom: .5rem;
   font-size: 1rem;
   text-align: center;
+  line-height: 1;
 }
 
 .card__stats {
