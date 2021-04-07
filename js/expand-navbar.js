@@ -5,4 +5,6 @@ expandBtn.addEventListener('click', (event) => {
   event.preventDefault();
   navbar.classList.toggle('expanded');
   expandBtn.classList.toggle('navbar__link--caret');
-})
+  navbarModal.classList.remove('visible');
+  searchBtn.classList.remove('active');
+});

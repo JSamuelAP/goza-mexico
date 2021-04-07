@@ -91,13 +91,22 @@
     font-size: map-get($map: $typo-scale, $key: small);
     color: #fff;
     z-index: 1000;
+    @include from(768px) {
+      left: 184.062px;
+      bottom: 0;
+    }
   }
   &__modal.visible {
     display: block;
     animation: show-modal .5s alternate;
   }
   &.expanded {
-    width: 184.078px;
+    @include from(768px) {
+      width: 184.078px;
+      span {
+       display: block;
+      }
+    }
     .navbar__link--caret {
       i:nth-child(1) {
         opacity: 0;
@@ -105,9 +114,6 @@
       i:nth-child(2) {
         display: block;
       }
-    }
-    span {
-      display: block;
     }
   }
 }

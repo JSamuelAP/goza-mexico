@@ -1866,14 +1866,26 @@ h6, .h6 {
   z-index: 1000;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar__modal {
+    left: 184.062px;
+    bottom: 0;
+  }
+}
+
 .navbar__modal.visible {
   display: block;
   -webkit-animation: show-modal .5s alternate;
           animation: show-modal .5s alternate;
 }
 
-.navbar.expanded {
-  width: 184.078px;
+@media screen and (min-width: 768px) {
+  .navbar.expanded {
+    width: 184.078px;
+  }
+  .navbar.expanded span {
+    display: block;
+  }
 }
 
 .navbar.expanded .navbar__link--caret i:nth-child(1) {
@@ -1881,10 +1893,6 @@ h6, .h6 {
 }
 
 .navbar.expanded .navbar__link--caret i:nth-child(2) {
-  display: block;
-}
-
-.navbar.expanded span {
   display: block;
 }
 
