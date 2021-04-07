@@ -83,15 +83,13 @@ $gaps: (
 $shadows: (
   card-1: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
   card-2: rgba(0, 0, 0, 0.04) 0px 10px 10px -5px,
-  surface: rgba(17, 17, 26, 0.2) 0px 0px 16px
+  surface: rgba(17, 17, 26, 0.1) 0px 0px 16px
 );
 
 /*
  * Navbar items
  */
 $nav-items: (
-  bars:    rosa,
-  caret:   morado,
   home:    rojo,
   contact: amarillo,
   about:   turquesa,

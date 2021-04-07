@@ -13,19 +13,11 @@
   &__content {
     padding: .5rem;
     font-size: map-get($map: $typo-scale, $key: small);
-    a.btn {
-      font-size: map-get($map: $typo-scale, $key: small);
-    }
-    @include from(768px) {
-      padding: .5rem 1rem;
-      font-size: map-get($map: $typo-scale, $key: base);
-    }
   }
   &__title {
     margin-bottom: .5rem;
     font-size: map-get($map: $typo-scale, $key: h6);
     text-align: center;
-    line-height: 1;
   }
   &__stats {
     display: flex;

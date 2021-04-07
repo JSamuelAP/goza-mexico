@@ -6,71 +6,21 @@
   font-size: map-get($map: $typo-scale, $key: small);
   background-color: map-get($map: $gray-scale, $key: gray-200);
   box-shadow: map-get($map: $shadows, $key: surface);
-  transition: width 600ms ease;
   z-index: 100;
-  @include from(768px) {
-    top: 0;
-    left: 0px;
-    width: 48px;
-    font-size: map-get($map: $typo-scale, $key: base);
-    overflow-x: hidden;
-  }
   &__list {
     display: flex;
     list-style: none;
-    @include from(768px) {
-      flex-direction: column;
-    }
   }
   &__item {
     flex-grow: 1;
-    @include from(768px) {
-      flex-grow: initial;
-    }
-    &:nth-child(1) {
-      display: none;
-      @include from(768px) {
-        display: block;
-        a {
-          justify-content: space-between;
-          i:last-child {
-            display: none;
-            margin-right: 0;
-          }
-        }
-      }
-    }
   }
   [class*="navbar__link"] {
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
     transition: background-color .5s;
-    @include from(768px) {
-      flex-direction: row;
-      padding: 1rem;
-      span {
-        display: none;
-      }
-    }
     i {
       margin-bottom: .25rem;
-      @include from(768px) {
-        margin-right: 1rem;
-        margin-bottom: 0;
-      }
-    }
-  }
-  .word-hidden {
-    display: none;
-    @include from(768px) {
-      display: block;
-    }
-    & + span {
-      text-transform: capitalize;
-      @include from(768px) {
-        text-transform: lowercase;
-      }
     }
   }
   @each $item, $color in $nav-items {
@@ -91,30 +41,10 @@
     font-size: map-get($map: $typo-scale, $key: small);
     color: #fff;
     z-index: 1000;
-    @include from(768px) {
-      left: 184.062px;
-      bottom: 0;
-    }
   }
   &__modal.visible {
     display: block;
     animation: show-modal .5s alternate;
-  }
-  &.expanded {
-    @include from(768px) {
-      width: 184.078px;
-      span {
-       display: block;
-      }
-    }
-    .navbar__link--caret {
-      i:nth-child(1) {
-        opacity: 0;
-      }
-      i:nth-child(2) {
-        display: block;
-      }
-    }
   }
 }
 @keyframes show-modal {
@@ -132,10 +62,5 @@
   &__link {
     display: block;
     padding: .1rem 0;
-  }
-}
-@include from(768px) {
-  body {
-    margin-left: 48px;
   }
 }

@@ -5,7 +5,7 @@ let revealElementos = document.querySelectorAll('.reveal');
 
       for (let i = 0; i < revealElementos.length; i++) {
         let alturaAnimado = revealElementos[i].offsetTop;
-        if (alturaAnimado - 600 < scrollTop) {
+        if (alturaAnimado - 500 < scrollTop) {
           revealElementos[i].style.opacity = 1;
           revealElementos[i].classList.add('moverArriba');
         }

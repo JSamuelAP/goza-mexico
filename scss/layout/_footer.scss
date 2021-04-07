@@ -10,7 +10,4 @@
     font-weight: map-get($map: $font-weights, $key: body-bold);
     color: map-get($map: $main-palete, $key: rojo);
   }
-  @include from(768px) {
-    margin-bottom: 0;
-  }
 }
