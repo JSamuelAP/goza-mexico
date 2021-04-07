@@ -1680,8 +1680,10 @@ h6, .h6 {
   text-align: center;
   font-size: 12.8px;
   background-color: #EEEEEE;
-  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-          box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.2) 0px 0px 16px;
+          box-shadow: rgba(17, 17, 26, 0.2) 0px 0px 16px;
+  -webkit-transition: width 600ms ease;
+  transition: width 600ms ease;
   z-index: 100;
 }
 
@@ -1870,6 +1872,22 @@ h6, .h6 {
           animation: show-modal .5s alternate;
 }
 
+.navbar.expanded {
+  width: 184.078px;
+}
+
+.navbar.expanded .navbar__link--caret i:nth-child(1) {
+  opacity: 0;
+}
+
+.navbar.expanded .navbar__link--caret i:nth-child(2) {
+  display: block;
+}
+
+.navbar.expanded span {
+  display: block;
+}
+
 @-webkit-keyframes show-modal {
   from {
     opacity: 0;
@@ -1956,8 +1974,8 @@ h6, .h6 {
   margin: 2rem 0 60px;
   padding: 1rem 0;
   background-color: #EEEEEE;
-  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-          box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.2) 0px 0px 16px;
+          box-shadow: rgba(17, 17, 26, 0.2) 0px 0px 16px;
 }
 
 .footer__text {
