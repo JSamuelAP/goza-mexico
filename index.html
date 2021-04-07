@@ -18,19 +18,25 @@
     <div class="header__hero">
       <div class="container hero__content">
         <h1 class="display hero__title">Goza México</h1>
-        <form class="row gap-row-1 search-form">
-          <div class="col-12">
+        <form class="row gap-row-1 m-gap-col-1 search-form">
+          <div class="col-12 m-col-9">
             <input type="text" class="search-form__input" placeholder="Buscar sitio de interés">
           </div>
-          <div class="col-12">
+          <div class="col-12 m-col-3">
             <input type="button" class="btn--ghost btn--big btn--full search-form__button" value="Buscar">
           </div>
         </form>
       </div>
     </div>
   </header>
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <ul class="navbar__list">
+      <li class="navbar__item">
+        <a href="" class="navbar__link--bars" id="expand-navbar">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-caret-left"></i>
+        </a>
+      </li>
       <li class="navbar__item">
         <a href="" class="active navbar__link--home">
           <i class="fas fa-home"></i>
@@ -46,7 +52,7 @@
       <li class="navbar__item">
         <a href="" class="navbar__link--about">
           <i class="fas fa-question-circle"></i>
-          <span>Nosotros</span>
+          <span class="word-hidden">Sobre&nbsp;</span><span>nosotros</span>
         </a>
       </li>
       <li class="navbar__item">
@@ -59,7 +65,7 @@
   </nav>
   <nav class="navbar__modal" id="navbar-modal">
     <div class="container">
-      <ul class="row gap-row gap-col-1 modal__list">
+      <ul class="row gap-row gap-col-1 m-gap-row-2 modal__list">
         <li class="col-6 m-col-3 modal__item"><a href="" class="modal__link">Baja California Sur</a></li>
         <li class="col-6 m-col-3 modal__item"><a href="" class="modal__link">Baja California Sur</a></li>
         <li class="col-6 m-col-3 modal__item"><a href="" class="modal__link">Baja California Sur</a></li>
@@ -142,7 +148,7 @@
             <img src="images/gallery/BCN-1.jpg" alt="Tijuana">
           </a>
           <section class="card__content">
-            <h3 class="card__title">Baja California</h3>
+            <h3 class="card__title">Baja California Sur</h3>
             <p class="card__stats">
               <span class="stats__views">
                 <i class="far fa-eye"></i> 125K
@@ -732,6 +738,7 @@
   </footer>
   <script src="js/scroll-reveal.js"></script>
   <script src="js/lightbox-plus-jquery.min.js"></script>
-  <script src="js/navbar-hover.js"></script>
+  <script src="js/navbar-modal.js"></script>
+  <script src="js/expand-navbar.js"></script>
 </body>
 </html>
