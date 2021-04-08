@@ -473,6 +473,12 @@ h6, .h6 {
   padding: 0 1rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
 .container-fluid {
   width: 100%;
   max-width: none;
@@ -1973,6 +1979,12 @@ h6, .h6 {
 
 @media screen and (min-width: 1024px) {
   .header .hero__title {
+    font-size: 7.75rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header .hero__title {
     font-size: 8rem;
   }
 }
@@ -2068,6 +2080,12 @@ h6, .h6 {
 
 .card__content a.btn {
   font-size: 12.8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card__content a.btn {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {

@@ -30,6 +30,9 @@
       font-size: map-get($map: $typo-scale, $key: display) / 2;
     }
     @include from(1024px) {
+      font-size: map-get($map: $typo-scale, $key: display) - .25rem;
+    }
+    @include from(1200px) {
       font-size: map-get($map: $typo-scale, $key: display);
     }
   }

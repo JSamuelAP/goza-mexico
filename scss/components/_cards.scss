@@ -15,6 +15,9 @@
     font-size: map-get($map: $typo-scale, $key: small);
     a.btn {
       font-size: map-get($map: $typo-scale, $key: small);
+      @include from(1024px) {
+        font-size: map-get($map: $typo-scale, $key: base);
+      }
     }
     @include from(768px) {
       padding: .5rem 1rem;
