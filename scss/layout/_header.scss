@@ -29,11 +29,17 @@
     @include from(768px) {
       font-size: map-get($map: $typo-scale, $key: display) / 2;
     }
+    @include from(1024px) {
+      font-size: map-get($map: $typo-scale, $key: display);
+    }
   }
   .search-form {
     @include from(768px) {
       margin: 0 auto;
       max-width: 500px;
+    }
+    @include from(1024px) {
+      max-width: 900px;
     }
   }
 }

@@ -1971,10 +1971,22 @@ h6, .h6 {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .header .hero__title {
+    font-size: 8rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header .search-form {
     margin: 0 auto;
     max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header .search-form {
+    max-width: 900px;
   }
 }
 
