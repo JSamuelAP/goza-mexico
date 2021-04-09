@@ -95,6 +95,10 @@
       left: 184.062px;
       bottom: 0;
     }
+    @include from(1024px) {
+      padding: 2rem 0;
+      font-size: map-get($map: $typo-scale, $key: base);
+    }
   }
   &__modal.visible {
     display: block;
