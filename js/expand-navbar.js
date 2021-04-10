@@ -7,4 +7,5 @@ expandBtn.addEventListener('click', (event) => {
   expandBtn.classList.toggle('navbar__link--caret');
   navbarModal.classList.remove('visible');
   searchBtn.classList.remove('active');
+  document.body.style.overflowY = 'unset';
 });
