@@ -10,3 +10,16 @@
 @function get-gray($num) {
   @return map-get($map: $gray-scale, $key: gray-#{$num});
 }
+
+/*
+ * Tipografía
+ */
+@function font-family($ff) {
+  @return map-get($map: $font-families, $key: $ff);
+}
+@function font-weight($fw) {
+  @return map-get($map: $font-weights, $key: $fw);
+}
+@function typo-scale($size) {
+  @return map-get($map: $typo-scale, $key: $size);
+}

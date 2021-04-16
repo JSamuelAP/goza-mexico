@@ -25,17 +25,17 @@
     }
   }
   .hero__title {
-    font-size: map-get($map: $typo-scale, $key: h2);
+    font-size: typo-scale(h2);
     text-align: center;
     color: #fff;
     @include from(768px) {
-      font-size: map-get($map: $typo-scale, $key: display) / 2;
+      font-size: typo-scale(display) / 2;
     }
     @include from(1024px) {
-      font-size: map-get($map: $typo-scale, $key: display) - .25rem;
+      font-size: typo-scale(display) - .25rem;
     }
     @include from(1200px) {
-      font-size: map-get($map: $typo-scale, $key: display);
+      font-size: typo-scale(display);
     }
   }
   .search-form {

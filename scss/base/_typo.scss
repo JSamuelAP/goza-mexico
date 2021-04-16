@@ -1,27 +1,27 @@
 :root {
   font-size: $font-size;
-  font-weight: map-get($map: $font-weights, $key: body-regular);
+  font-weight: font-weight(body-regular);
   line-height: 1;
 }
 body {
-  font-family: map-get($map: $font-families, $key: body);
+  font-family: font-family(body);
   color: get-gray(900);
 }
 %heading {
-  font-family: map-get($map: $font-families, $key: heading);
-  font-weight: map-get($map: $font-weights, $key: heading-regular);
+  font-family: font-family(heading);
+  font-weight: font-weight(heading-regular);
   @include from(768px) {
     line-height: .5;
   }
 }
 @for $heading-num from 1 through 6 {
   h#{$heading-num}, .h#{$heading-num} {
-    font-size: map-get($map: $typo-scale, $key: h#{$heading-num});
+    font-size: typo-scale(h#{$heading-num});
     @extend %heading;
   }
 }
 .display {
-  font-size: map-get($map: $typo-scale, $key: display);
+  font-size: typo-scale(display);
   text-transform: uppercase;
   @extend %heading;
 }

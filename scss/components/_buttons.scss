@@ -3,7 +3,7 @@
   padding: .25rem 1rem;
   border-radius: 4px;
   text-align: center;
-  font-weight: map-get($map: $font-weights, $key: body-bold);
+  font-weight: font-weight(body-bold);
   cursor: pointer;
 }
 .btn {

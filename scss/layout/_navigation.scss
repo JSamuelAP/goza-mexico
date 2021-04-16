@@ -3,7 +3,7 @@
   bottom: 0;
   width: 100%;
   text-align: center;
-  font-size: map-get($map: $typo-scale, $key: small);
+  font-size: typo-scale(small);
   background-color: get-gray(200);
   box-shadow: map-get($map: $shadows, $key: surface);
   transition: width 600ms ease;
@@ -12,7 +12,7 @@
     top: 0;
     left: 0px;
     width: 48px;
-    font-size: map-get($map: $typo-scale, $key: base);
+    font-size: typo-scale(base);
     overflow-x: hidden;
   }
   &__list {
@@ -89,7 +89,7 @@
     padding: 1rem 0;
     background-color: rgba($color: #000, $alpha: .9);
     text-align: center;
-    font-size: map-get($map: $typo-scale, $key: small);
+    font-size: typo-scale(small);
     color: #fff;
     z-index: 100;
     @include from(768px) {
@@ -98,7 +98,7 @@
     }
     @include from(1024px) {
       padding: 2rem 0;
-      font-size: map-get($map: $typo-scale, $key: base);
+      font-size: typo-scale(base);
     }
   }
   &__modal.visible {
