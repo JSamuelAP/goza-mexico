@@ -8,7 +8,7 @@
   box-shadow: map-get($map: $shadows, $key: surface);
   transition: width 600ms ease;
   z-index: 1000;
-  @include from(768px) {
+  @include from(bkp(m)) {
     top: 0;
     left: 0px;
     width: 48px;
@@ -18,18 +18,18 @@
   &__list {
     display: flex;
     list-style: none;
-    @include from(768px) {
+    @include from(bkp(m)) {
       flex-direction: column;
     }
   }
   &__item {
     flex-grow: 1;
-    @include from(768px) {
+    @include from(bkp(m)) {
       flex-grow: initial;
     }
     &:nth-child(1) {
       display: none;
-      @include from(768px) {
+      @include from(bkp(m)) {
         display: block;
         a {
           justify-content: space-between;
@@ -46,7 +46,7 @@
     flex-direction: column;
     padding: 1rem 0;
     transition: background-color .5s;
-    @include from(768px) {
+    @include from(bkp(m)) {
       flex-direction: row;
       padding: 1rem;
       span {
@@ -55,7 +55,7 @@
     }
     i {
       margin-bottom: .25rem;
-      @include from(768px) {
+      @include from(bkp(m)) {
         margin-right: 1rem;
         margin-bottom: 0;
       }
@@ -63,12 +63,12 @@
   }
   .word-hidden {
     display: none;
-    @include from(768px) {
+    @include from(bkp(m)) {
       display: block;
     }
     & + span {
       text-transform: capitalize;
-      @include from(768px) {
+      @include from(bkp(m)) {
         text-transform: lowercase;
       }
     }
@@ -92,11 +92,11 @@
     font-size: typo-scale(small);
     color: #fff;
     z-index: 100;
-    @include from(768px) {
+    @include from(bkp(m)) {
       left: 184.062px;
       bottom: 0;
     }
-    @include from(1024px) {
+    @include from(bkp(l)) {
       padding: 2rem 0;
       font-size: typo-scale(base);
     }
@@ -106,7 +106,7 @@
     animation: show-modal .5s alternate;
   }
   &.expanded {
-    @include from(768px) {
+    @include from(bkp(m)) {
       width: 184.078px;
       span {
        display: block;
@@ -139,7 +139,7 @@
     padding: .1rem 0;
   }
 }
-@include from(768px) {
+@include from(bkp(m)) {
   body {
     margin-left: 48px;
   }

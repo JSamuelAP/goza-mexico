@@ -10,7 +10,7 @@ body {
 %heading {
   font-family: font-family(heading);
   font-weight: font-weight(heading-regular);
-  @include from(768px) {
+  @include from(bkp(m)) {
     line-height: .5;
   }
 }

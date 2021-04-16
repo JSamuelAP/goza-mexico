@@ -23,3 +23,10 @@
 @function typo-scale($size) {
   @return map-get($map: $typo-scale, $key: $size);
 }
+
+/*
+ * Breakpoints
+ */
+@function bkp($bkp) {
+  @return map-get($map: $breakpoints, $key: $bkp);
+}

@@ -10,7 +10,7 @@
     font-weight: font-weight(body-bold);
     color: get-color(rojo);
   }
-  @include from(768px) {
+  @include from(bkp(m)) {
     margin-bottom: 0;
   }
 }

@@ -28,22 +28,22 @@
     font-size: typo-scale(h2);
     text-align: center;
     color: #fff;
-    @include from(768px) {
+    @include from(bkp(m)) {
       font-size: typo-scale(display) / 2;
     }
-    @include from(1024px) {
+    @include from(bkp(l)) {
       font-size: typo-scale(display) - .25rem;
     }
-    @include from(1200px) {
+    @include from(bkp(xl)) {
       font-size: typo-scale(display);
     }
   }
   .search-form {
-    @include from(768px) {
+    @include from(bkp(m)) {
       margin: 0 auto;
       max-width: 500px;
     }
-    @include from(1024px) {
+    @include from(bkp(l)) {
       max-width: 900px;
     }
   }
