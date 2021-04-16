@@ -2,9 +2,9 @@
  * Color items
  */
 @mixin item-color($color) {
-  color: map-get($map: $main-palete, $key: $color);
+  color: get-color($color);
   &:hover, &.active {
-    background-color: map-get($map: $light-palete, $key: $color);
+    background-color: get-light-color($color);
   }
 }
 /*

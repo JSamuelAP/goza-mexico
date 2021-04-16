@@ -8,15 +8,15 @@
 }
 .btn {
   @extend %btn;
-  background-color: map-get($map: $main-palete, $key: rojo);
+  background-color: get-color(rojo);
   color: #fff;
   border: none;
 }
 .btn--ghost {
   @extend %btn;
   background-color: transparent;
-  color: map-get($map: $main-palete, $key: rojo);
-  border: 2px solid map-get($map: $main-palete, $key: rojo);
+  color: get-color(rojo);
+  border: 2px solid get-color(rojo);
 }
 .btn--big  {
   padding: .5rem 1.5rem;

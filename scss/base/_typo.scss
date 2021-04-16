@@ -5,7 +5,7 @@
 }
 body {
   font-family: map-get($map: $font-families, $key: body);
-  color: map-get($map: $gray-scale, $key: gray-900);
+  color: get-gray(900);
 }
 %heading {
   font-family: map-get($map: $font-families, $key: heading);

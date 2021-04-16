@@ -3,9 +3,10 @@
   &__hero {
     height: 100%;
     background-image: linear-gradient(to bottom,
-                                                 rgba(#000, .9) 70%,
-                                                 rgba(#000, .6) 80%,
-                                                 map-get($map: $gray-scale, $key: gray-50)),
+                                      rgba(#000, .9) 70%,
+                                      rgba(#000, .6) 80%,
+                                      get-gray(50)
+                                     ),
                       url(../../images/backgrounds/main-bg-m.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,9 +17,10 @@
 
     @include from(468px) {
       background-image: linear-gradient(to bottom,
-                                                  rgba(#000, .9) 70%,
-                                                  rgba(#000, .6) 80%,
-                                                  map-get($map: $gray-scale, $key: gray-50)),
+                                        rgba(#000, .9) 70%,
+                                        rgba(#000, .6) 80%,
+                                        get-gray(50)
+                                       ),
                         url(../../images/backgrounds/main-bg.jpg);
     }
   }

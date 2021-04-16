@@ -4,7 +4,7 @@
   width: 100%;
   text-align: center;
   font-size: map-get($map: $typo-scale, $key: small);
-  background-color: map-get($map: $gray-scale, $key: gray-200);
+  background-color: get-gray(200);
   box-shadow: map-get($map: $shadows, $key: surface);
   transition: width 600ms ease;
   z-index: 1000;

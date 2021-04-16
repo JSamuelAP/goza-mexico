@@ -1,0 +1,12 @@
+/*
+ * Colores
+ */
+@function get-color($color) {
+  @return map-get($map: $main-palete, $key: $color);
+}
+@function get-light-color($color) {
+  @return map-get($map: $light-palete, $key: $color);
+}
+@function get-gray($num) {
+  @return map-get($map: $gray-scale, $key: gray-#{$num});
+}
