@@ -8,11 +8,10 @@ body {
   color: get-gray(900);
 }
 %heading {
+  margin: 0;
   font-family: font-family(heading);
   font-weight: font-weight(heading-regular);
-  @include from(bkp(m)) {
-    line-height: .5;
-  }
+  line-height: 1.25;
 }
 @for $heading-num from 1 through 6 {
   h#{$heading-num}, .h#{$heading-num} {

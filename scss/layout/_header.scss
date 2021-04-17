@@ -25,14 +25,17 @@
     }
   }
   .hero__title {
-    font-size: typo-scale(h2);
+    font-size: typo-scale(display-xs);
     text-align: center;
     color: #fff;
+    @include from(bkp(s)) {
+      font-size: typo-scale(display-s);
+    }
     @include from(bkp(m)) {
-      font-size: typo-scale(display) / 2;
+      font-size: typo-scale(display-m);
     }
     @include from(bkp(l)) {
-      font-size: typo-scale(display) - .25rem;
+      font-size: typo-scale(display-l);
     }
     @include from(bkp(xl)) {
       font-size: typo-scale(display);
