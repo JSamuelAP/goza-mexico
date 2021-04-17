@@ -5,7 +5,7 @@
   text-align: center;
   font-size: typo-scale(small);
   background-color: get-gray(200);
-  box-shadow: map-get($map: $shadows, $key: surface);
+  box-shadow: shadow(surface);
   transition: width 600ms ease;
   z-index: 1000;
   @include from(bkp(m)) {

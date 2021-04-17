@@ -2,8 +2,8 @@
   width: 100%;
   border-radius: .25rem;
   background-color: #fff;
-  box-shadow: map-get($map: $shadows, $key: card-1),
-              map-get($map: $shadows, $key: card-2);
+  box-shadow: shadow(card-1),
+              shadow(card-2);
   overflow: hidden;
 
   &__img img {
