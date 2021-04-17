@@ -6,5 +6,10 @@
     border-radius: 4px;
     background-color: transparent;
     color: #fff;
+    transition: transform .5s;
+    &:focus {
+     transform: scaleY(1.1);
+     outline: none;
+    }
   }
 }

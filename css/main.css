@@ -2056,6 +2056,15 @@ h6, .h6 {
   text-align: center;
   font-weight: 700;
   cursor: pointer;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.btn:focus, .btn--ghost:focus {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .btn {
@@ -2148,6 +2157,16 @@ h6, .h6 {
   border-radius: 4px;
   background-color: transparent;
   color: #fff;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.search-form__input:focus {
+  -webkit-transform: scaleY(1.1);
+          transform: scaleY(1.1);
+  outline: none;
 }
 
 body {
