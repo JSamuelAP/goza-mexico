@@ -91,6 +91,7 @@
     text-align: center;
     font-size: typo-scale(small);
     color: #fff;
+    opacity: 0;
     z-index: 100;
     @include from(bkp(m)) {
       left: 184.062px;
@@ -103,7 +104,7 @@
   }
   &__modal.visible {
     display: block;
-    animation: show-modal .5s alternate;
+    animation: show-modal .5s forwards;
   }
   &.expanded {
     @include from(bkp(m)) {
@@ -123,9 +124,6 @@
   }
 }
 @keyframes show-modal {
-  from {
-    opacity: 0;
-  }
   to {
     opacity: 1;
   }

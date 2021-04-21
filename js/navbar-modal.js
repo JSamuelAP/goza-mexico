@@ -9,6 +9,9 @@ searchBtn.addEventListener('click', (event) => {
   if (!navbar.classList.contains('expanded')) {
     navbar.classList.add('expanded');
     expandBtn.classList.add('navbar__link--caret');
+    navbarModal.style.animationDelay = '600ms';
+  } else {
+    navbarModal.style.animationDelay = '0s';
   }
   letBodyScroll();
 });

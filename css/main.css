@@ -1876,6 +1876,7 @@ h6, .h6 {
   text-align: center;
   font-size: 12.8px;
   color: #fff;
+  opacity: 0;
   z-index: 100;
 }
 
@@ -1895,8 +1896,8 @@ h6, .h6 {
 
 .navbar__modal.visible {
   display: block;
-  -webkit-animation: show-modal .5s alternate;
-          animation: show-modal .5s alternate;
+  -webkit-animation: show-modal .5s forwards;
+          animation: show-modal .5s forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -1917,18 +1918,12 @@ h6, .h6 {
 }
 
 @-webkit-keyframes show-modal {
-  from {
-    opacity: 0;
-  }
   to {
     opacity: 1;
   }
 }
 
 @keyframes show-modal {
-  from {
-    opacity: 0;
-  }
   to {
     opacity: 1;
   }
