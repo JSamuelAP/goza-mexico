@@ -6,6 +6,7 @@
   font-weight: font-weight(body-bold);
   cursor: pointer;
   transition: transform .5s;
+  user-select: none;
   &:focus {
     transform: scale(1.05);
   }
