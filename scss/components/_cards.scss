@@ -6,9 +6,22 @@
               shadow(card-2);
   overflow: hidden;
 
-  &__img img {
+  &__img {
+    display: block;
+    position: relative;
     width: 100%;
-    object-fit: cover;
+    padding-top: 56.25%;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      object-fit: cover;
+      transition: transform 500ms ease-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
   &__content {
     padding: .5rem;
