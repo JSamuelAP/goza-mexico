@@ -142,3 +142,6 @@
     margin-left: 48px;
   }
 }
+body.no-scrolling {
+  overflow-y: hidden;
+}

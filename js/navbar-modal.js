@@ -4,6 +4,7 @@ const body = document.body;
 
 searchBtn.addEventListener('click', (event) => {
   event.preventDefault();
+  body.classList.toggle('no-scrolling');
   searchBtn.classList.toggle('active');
   navbarModal.classList.toggle('visible');
   if (!navbar.classList.contains('expanded')) {
@@ -13,13 +14,4 @@ searchBtn.addEventListener('click', (event) => {
   } else {
     navbarModal.style.animationDelay = '0s';
   }
-  letBodyScroll();
 });
-
-function letBodyScroll() {
-  if (body.style.overflowY === 'hidden') {
-    body.style.overflowY = 'unset';
-  } else {
-    body.style.overflowY = 'hidden';
-  }
-}
