@@ -2195,6 +2195,41 @@ body {
   background-color: #FAFAFA;
 }
 
+body.state .header__hero {
+  display: block;
+  padding: 1rem 1rem 0;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  body.state .header__hero {
+    padding: 2rem 2rem 0;
+  }
+}
+
+body.state .hero__logo {
+  text-align: center;
+  font-size: 1.953rem;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  body.state .hero__logo {
+    text-align-last: left;
+  }
+}
+
+body.state .search-form__input {
+  padding: .25rem 1rem;
+}
+
+body.state .hero__title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
 .lb-loader, .lightbox {
   text-align: center;
   line-height: 0;
