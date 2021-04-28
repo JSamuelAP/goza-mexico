@@ -2,6 +2,30 @@
 /*
  * Colores
  */
+.color-rojo {
+  color: #EE2743;
+}
+
+.color-rosa {
+  color: #EC2286;
+}
+
+.color-amarillo {
+  color: #EEB627;
+}
+
+.color-morado {
+  color: #AC2484;
+}
+
+.color-verde {
+  color: #85C441;
+}
+
+.color-turquesa {
+  color: #00ABBE;
+}
+
 /*
  * Tipografía
  */
@@ -2230,6 +2254,52 @@ body.state .hero__title {
   right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+body.state .state-info {
+  background-color: #E0E0E0;
+}
+
+body.state .state-info__map {
+  width: 100%;
+}
+
+body.state .state-info__content {
+  padding: 1rem .5rem;
+  font-weight: 200;
+  color: #616161;
+}
+
+body.state .state-info__content .state-info__state-stats {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+body.state .state-info__content .state-stats__data, body.state .state-info__content .page-stats__data {
+  margin-bottom: .5rem;
+}
+
+body.state .state-info__content .state-stats__data:last-child, body.state .state-info__content .page-stats__data:last-child {
+  margin-bottom: 0;
+}
+
+body.state .state-info__content .state-stats__data i, body.state .state-info__content .page-stats__data i {
+  width: 1.25rem;
+  margin-right: .5rem;
+}
+
+body.state .state-info__content .state-stats__data span, body.state .state-info__content .page-stats__data span {
+  font-weight: 400;
+  color: #212121;
+}
+
+body.state .state-info__content .state-stats__data span {
+  margin-left: 2rem;
+}
+
+body.state .state-info__content .page-stats__data span {
+  float: right;
 }
 
 .lb-loader, .lightbox {

@@ -29,6 +29,11 @@ $gray-scale: (
   gray-800: #424242,
   gray-900: #212121,
 );
+@each $nombre, $color in $main-palete {
+  .color-#{$nombre} {
+    color: $color;
+  }
+}
 
 /*
  * Tipografía
