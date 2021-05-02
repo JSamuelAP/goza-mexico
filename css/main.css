@@ -2219,6 +2219,36 @@ body.no-scrolling {
   outline: none;
 }
 
+.pages-navigation {
+  margin-top: 4rem;
+  font-size: font-size(small);
+}
+
+.pages-navigation__last {
+  text-align: right;
+}
+
+.pages-navigation__next {
+  text-align: left;
+}
+
+.pages-navigation__link {
+  color: #EC2286;
+}
+
+.pages-navigation__link:visited {
+  color: #AC2484;
+}
+
+.pages-navigation__link:hover, .pages-navigation__link:focus {
+  text-decoration: underline;
+}
+
+.pages-navigation__link.disabled {
+  color: #9E9E9E;
+  pointer-events: none;
+}
+
 body {
   background-color: #FAFAFA;
 }

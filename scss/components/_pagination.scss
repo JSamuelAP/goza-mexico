@@ -1,0 +1,23 @@
+.pages-navigation {
+  margin-top: 4rem;
+  font-size: font-size(small);
+  &__last {
+    text-align: right;
+  }
+  &__next {
+    text-align: left;
+  }
+  &__link {
+    color: get-color(rosa);
+    &:visited {
+      color: get-color(morado);
+    }
+    &:hover, &:focus {
+      text-decoration: underline;
+    }
+    &.disabled {
+      color: get-gray(500);
+      pointer-events: none;
+    }
+  }
+}
