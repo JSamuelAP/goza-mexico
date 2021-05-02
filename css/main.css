@@ -2196,6 +2196,10 @@ body.no-scrolling {
   color: #EC2286;
 }
 
+.card .stats__share i {
+  color: #00ABBE;
+}
+
 .search-form__input {
   width: 100%;
   padding: .5rem 1rem;
