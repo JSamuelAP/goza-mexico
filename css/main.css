@@ -2336,6 +2336,18 @@ body.state .state-info__content .page-stats__data span {
   float: right;
 }
 
+.header__hero.ags {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(0, 0, 0, 0.9)), color-stop(80%, rgba(0, 0, 0, 0.6)), to(#FAFAFA)), url(../../images/backgrounds/Ags-bg-m.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.6) 80%, #FAFAFA), url(../../images/backgrounds/Ags-bg-m.jpg);
+}
+
+@media screen and (min-width: 468px) {
+  .header__hero.ags {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(0, 0, 0, 0.9)), color-stop(80%, rgba(0, 0, 0, 0.6)), to(#FAFAFA)), url(../../images/backgrounds/Ags-bg.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 70%, rgba(0, 0, 0, 0.6) 80%, #FAFAFA), url(../../images/backgrounds/Ags-bg.jpg);
+  }
+}
+
 .lb-loader, .lightbox {
   text-align: center;
   line-height: 0;
