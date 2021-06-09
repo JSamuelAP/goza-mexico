@@ -6,7 +6,7 @@
                                           rgba(#000, .6) 80%,
                                           get-gray(50)
                                         ),
-                          url(../images/backgrounds/#{$state}-bg-m.jpg);
+        url(../images/backgrounds/#{$state-uppercase}-bg-m.jpg);
       @include from(bkp(s)) {
         background-image: linear-gradient(to bottom,
                                           rgba(#000, .9) 70%,
